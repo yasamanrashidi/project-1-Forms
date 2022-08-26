@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project001</title>
+  </head>
+  <body dir="rtl">
+    <h1>فرم استخدام</h1>
+    <form action="form/user.php" method="get">
+      <fieldset>
+        <legend>مشخصات فردی</legend>
+        <label for="نام">نام :</label>
+        <input type="text" name="نام" id="نام" autofocus required />
+        <label for="نام خانوادگی">نام خانوادگی :</label>
+        <input type="text" name="نام خانوادگی" id="نام خانوادگی" required />
+        <label for="نام پدر">نام پدر : </label>
+        <input type="text" name="نام پدر" id="نام پدر" />
+        <br /><br />
+        <label for="تاریخ تولد">تاریخ تولد :</label>
+        <input
+          type="datetime-local"
+          name="تاریخ تولد"
+          id="تاریخ تولد"
+          required
+        />
+        <label for="محل تولد">محل تولد :</label>
+        <input type="text" name="محل تولد" id="محل تولد" />
+        <label for="کدملی">کد ملی :</label>
+        <input type="password" name="کدملی" id="کدملی" required />
+        <br /><br />
+        <label for="وضعیت تاهل">وضعیت تاهل: </label>
+        <label for="مجرد">مجرد</label>
+        <input type="radio" name="وضعیت تاهل" id="مجرد" value="مجرد" />
+        <label for="متاهل">متاهل</label>
+        <input type="radio" name="وضعیت تاهل" id="متاهل" value="متاهل" />
+        <label for="وضعیت نظام وظیفه">وضعیت نظام وظیفه: </label>
+        <label for="پایان خدمت">پایان خدمت</label>
+        <input
+          type="radio"
+          name="وضعیت نظام وظیفه"
+          id="پایان خدمت"
+          value="پایان خدمت"
+        />
+        <label for="معاف">معاف</label>
+        <input type="radio" name="وضعیت نظام وظیفه" id="معاف" value="معاف" />
+        <br /><br />
+        <label for="تلفن تماس">تلفن تماس :</label>
+        <input
+          type="tel"
+          name="تلفن تماس"
+          id="تلفن تماس"
+          placeholder="+989929804199"
+          required
+        />
+        <label for="ایمیل">ایمیل :</label>
+        <input
+          type="email"
+          name="ایمیل"
+          placeholder="example@gmail.com"
+          id="ایمیل"
+        />
+        <label for="رنگ">رنگ مورد علاقه: </label>
+        <input type="color" name="رنگ مورد علاقه" id="رنگ" />
+        <br /><br />
+        <label for="اسکن کارت">اسکن کارت شناسایی: </label>
+        <input type="file" name="اسکن کارت " id="اسکن کارت" multiple />
+        <br />
+        <label for="نشانی">نشانی محل سکونت: </label>
+        <br />
+        <textarea
+          name="نشانی محل سکونت"
+          id="نشانی"
+          cols="20"
+          rows="5"
+        ></textarea>
+        <br />
+        <label for="نحوه آشنایی">نحوه آشنایی با ما : </label>
+        <select name="نحوه آشنایی" id="نحوه آشنایی">
+          <option selected disabled>یک گزینه را انتخاب کنید</option>
+          <option value="دوستان و آشنایان">دوستان و آشنایان</option>
+          <option value="سایت">سایت</option>
+          <option value="تلگرام">تلگرام</option>
+          <option value="اینستاگرام">اینستاگرام</option>
+          <option value="سایر">سایر</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>سوابق تحصیلی</legend>
+        <label for="رشته تحصیلی">رشته تحصیلی :</label>
+        <input type="text" name="رشته تحصیلی" id="رشته تحصیلی" />
+        <label for="معدل">معدل: </label>
+        <input type="number" name="معدل" id="معدل" min="14" max="20" />
+        <br /><br />
+        <label for="مقطع تحصیلی">مقطع تحصیلی :</label>
+        <label for="دیپلم">دیپلم</label>
+        <input type="checkbox" name="دیپلم" id="دیپلم" />
+        <label for="فوق دیپلم">فوق دیپلم</label>
+        <input type="checkbox" name="فوق دیپلم" id="فوق دیپلم" />
+        <label for="لیسانس">لیسانس</label>
+        <input type="checkbox" name="لیسانس" id="لیسانس" />
+        <label for="فوق لیسانس">فوق لیسانس</label>
+        <input type="checkbox" name="فوق لیسانس" id="فوق لیسانس" />
+        <label for="دکتری">دکتری</label>
+        <input type="checkbox" name="دکتری" id="دکتری" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>مهارت ها</legend>
+        <label for="زبان">میزان آشنایی با زبان انگلیسی : </label>
+        <label for="عالی">عالی</label>
+        <input type="checkbox" name="عالی" id="عالی" />
+        <label for="خوب">خوب</label>
+        <input type="checkbox" name="خوب" id="خوب" />
+        <label for="متوسط">متوسط</label>
+        <input type="checkbox" name="متوسط" id="متوسط" />
+        <label for="ضعیف">ضعیف</label>
+        <input type="checkbox" name="ضعیف" id="ضعیف" />
+        <br />
+        <label for="زبان"> آشنایی با کامپیوتر: </label>
+        <label for="windows" dir="ltr">windows</label>
+        <input type="checkbox" name="windows" id="windows" />
+        <label for="word" dir="ltr">word</label>
+        <input type="checkbox" name="word" id="word" />
+        <label for="excell" dir="ltr">excell</label>
+        <input type="checkbox" name="excell" id="excell" />
+        <label for="access" dir="ltr">access</label>
+        <input type="checkbox" name="access" id="access" />
+        <label for="internet" dir="ltr">internet</label>
+        <input type="checkbox" name="internet" id="internet" />
+        <label for="powerpoint" dir="ltr">powerpoint</label>
+        <input type="checkbox" name="powerpoint" id="powerpoint" />
+        <label for="type" dir="ltr">type</label>
+        <input type="checkbox" name="type" id="type" />
+        <br />
+        <label for="مطالعه">اهل مطالعه هستید : </label>
+        <input
+          type="range"
+          name="مطالعه"
+          id="مطالعه"
+          step="5"
+          min="0"
+          max="100"
+        />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>علاقمندی ها</legend>
+        <label for="هنر">هنر</label>
+        <input type="checkbox" name="هنر" id="هنر" />
+        <label for="سفر">سفر</label>
+        <input type="checkbox" name="سفر" id="سفر" />
+        <label for="طبیعت">طبیعت</label>
+        <input type="checkbox" name="طبیعت" id="طبیعت" />
+        <label for="تاریخ">تاریخ</label>
+        <input type="checkbox" name="تاریخ" id="تاریخ" />
+        <label for="زبانهای خارجی">زبانهای خارجی</label>
+        <input type="checkbox" name="زبانهای خارجی" id="زبانهای خارجی" />
+        <label for="تئاتر">تئاتر</label>
+        <input type="checkbox" name="تئاتر" id="تئاتر" />
+        <label for="ورزش">ورزش</label>
+        <input type="checkbox" name="ورزش" id="ورزش" />
+        <label for="وبلاگ نویسی">وبلاگ نویسی</label>
+        <input type="checkbox" name="وبلاگ نویسی" id="وبلاگ نویسی" />
+        <label for="موسیقی">موسیقی</label>
+        <input type="checkbox" name="موسیقی" id="موسیقی" />
+        <br>
+        <label for="وب سایت">وب سایت مورد علاقه : </label>
+        <input type="url" name="وب سایت مورد علاقه" id="وب سایت">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>تاریخ ثبت فرم</legend>
+        <label for="زمان">زمان : </label>
+        <input type="time" name="زمان" id="زمان">
+        <label for="هفته">هفته : </label>
+        <input type="week" name="هفته" id="هفته">
+        <label for="ماه">ماه و سال : </label>
+        <input type="month" name="ماه" id="ماه">
+      </fieldset>
+      <br />
+      <input type="submit" value="ثبت" />
+      <input type="reset" value="بازنشانی" />
+    </form>
+  </body>
+</html>
